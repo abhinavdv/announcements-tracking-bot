@@ -8,5 +8,8 @@ bot.on('message', (msg) => {
     if (msg.text.toString().toLowerCase().indexOf(Hi) === 0) {
         bot.sendMessage(msg.chat.id, "Hello dear user");
     }
-
+    var Bye = "bye";
+    if (msg.text.toString().toLowerCase().indexOf(Bye) === 0) {
+        bot.sendMessage(msg.chat.id, "Bye dear user");
+    }
 });
